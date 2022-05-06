@@ -283,6 +283,7 @@ footer>div:last-child{
 
 }
 
+/* media query */
 @media all  and (min-width:200px) and (max-width:850px){
     #productInfo{
         width: 70%;

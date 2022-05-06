@@ -4,76 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>footer</title>
-    <script src="https://kit.fontawesome.com/63ed2a64a9.js" crossorigin="anonymous"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        #shadow{
-            height: 10px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        }
-        footer>div{
-            width: 70%;
-            display: flex;
-            margin: 60px auto;
-            justify-content: space-between;
-            align-items: flex-start;
-            font-size: 14px;
-        }
-        footer>div>div *{
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: gray;
-        }
-        footer div>h2{
-            font-size: 20px;
-            color: rgb(51, 51, 51);
-            font-weight: lighter;
-        }
-        footer div>div>input{
-            height: 40px;
-            width: 200px;
-            border: none;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-        footer div>div>button{
-            height: 40px;
-            width: auto;
-            border: none;
-            color: white;
-            border-radius: 8px;
-            padding: 0 15px;
-            background-color: rgb(196, 159, 91);
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-        footer div>div>button:hover{
-            background-color: black;
-        }
-        footer a>p:hover{
-            color: rgb(244, 182, 66);
-        }
-        footer>#footLogo{
-            width: 200px;
-        }
-        footer>#footLogo>a{
-            padding: 10px 10px;
-            margin: 5px;
-            font-size: 10px;
-            border-radius:50%;
-            background-color: rgb(236, 236, 236);
-        }
-        footer>div:last-child{
-            font-size: 20px;
-            margin-top: -30px;
-            margin-left: 40%;
-        }       
-    </style>
+    <title>Your Shopping Cart – FAB BAG</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
 </head>
 <body>
+     <!-- navbar section -->
+    <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
+        <div id="navbar">
+            <h2>SUBSCRIBE NOW</h2>
+            <a href="index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+         <div>
+             <i class="fa-solid fa-magnifying-glass"></i> 
+             <i class="fa-solid fa-heart"></i>
+             <a href="signIN.html"><i class="fa-regular fa-user"></i></a>
+             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+         </div>
+    </div>
+    <!-- cart section -->
+    <div id="cartBox">
+        <h1>My Cart</h1>
+        <div>
+            <table>
+                <thead>
+                    <th>PRODUCT</th>
+                    <th></th>
+                    <th>QTY</th>
+                    <th>PRICE</th>
+                    <th></th>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="rightCart">
+                <div>
+                    <div>TOTAL PRICE :</div>
+                    <div id="updateTP">RS 599.00</div>
+                </div>
+                <button>UPDATE CART</button>
+                <a href=""><button>CHECK OUT</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
     <div id="shadow"></div>
     <footer>
         <div>
@@ -113,3 +85,4 @@
     </footer>
 </body>
 </html>
+<script src="cart.js"></script>

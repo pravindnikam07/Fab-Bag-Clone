@@ -74,7 +74,7 @@ var bookmarkData = JSON.parse(localStorage.getItem('bookmark')) || [];
 addToCart.addEventListener('click',function(){
     bookmarkObj = {
         productIMG : document.getElementById('productIMG').src,
-        productPrice : document.getElementById('productPrice').innerText,
+        productPrice : document.querySelector('#productPrice>span').innerText,
         productQTY : document.getElementById('productQTY').innerText,
         productName : document.getElementById('productName').innerText
     }
