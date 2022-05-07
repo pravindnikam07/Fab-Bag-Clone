@@ -121,6 +121,66 @@
         font-size: 17px;
         font-family: 'Poppins', sans-serif;
     }
+
+    #shadow{
+            height: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+        footer>div{
+            width: 70%;
+            display: flex;
+            margin: 60px auto;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 14px;
+        }
+        footer>div>div *{
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: gray;
+        }
+        footer div>h2{
+            font-size: 20px;
+            color: rgb(51, 51, 51);
+            font-weight: lighter;
+        }
+        footer div>div>input{
+            height: 40px;
+            width: 200px;
+            border: none;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        footer div>div>button{
+            height: 40px;
+            width: auto;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            padding: 0 15px;
+            background-color: rgb(196, 159, 91);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        footer div>div>button:hover{
+            background-color: black;
+        }
+        footer a>p:hover{
+            color: rgb(244, 182, 66);
+        }
+        footer>#footLogo{
+            width: 200px;
+        }
+        footer>#footLogo>a{
+            padding: 10px 10px;
+            margin: 5px;
+            font-size: 10px;
+            border-radius:50%;
+            background-color: rgb(236, 236, 236);
+        }
+        footer>div:last-child{
+            font-size: 20px;
+            margin-top: -30px;
+            margin-left: 40%;
+        }       
 </style>
 <script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
 <body>
@@ -198,5 +258,43 @@ analyse data about web page traffic and improve our website in order to tailor i
     </Ul>
   
     </div>
+
+    <div id="shadow"></div>
+    <footer>
+        <div>
+            <div>
+                <h2>INFORMATION</h2>
+                <a href="../InformationSection/about.html"><p>About Us</p></a>
+                <a href="../InformationSection/associatedBrands.html"><p>Associated Brands</p></a>
+                <a href="../InformationSection/faq.html"><p>FAQ</p></a>
+                <a href="../InformationSection/collaborate.html"><p>Collaborate with Fab Bag</p></a>
+                <a href="../InformationSection/contact.html"><p>Contact Us</p></a>
+                <a href="../InformationSection/returns.html"><p>Returns & Refunds</p></a>
+                <a href="../InformationSection/terms.html"><p>Terms & Conditions</p></a>
+                <a href="../InformationSection/privacy.html"><p>Privacy Policy</p></a>
+            </div>
+            <div>
+                <h2>CUSTOMER CARE</h2>
+                <p>Call : 022-6805-6010 <br> (Monday to Friday : 9 AM - 7 PM).</p>
+                <p>Mail : crew@fabbag.com</p>
+            </div>
+            <div>
+                <h2>NEWSLETTER</h2>
+                <p>Signup for the latest offers, updates and news</p>
+                <div>
+                    <input type="text" placeholder="Your mail address">
+                    <button>SUBSCRIBE</button>
+                </div>
+                <p>Don’t worry we don’t spam</p>
+            </div>
+        </div>
+        <div id="footLogo">
+            <a href="http://facebook.com/fabbag"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/thefabbag"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/thefabbag/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/fabbag"><i class="fa-brands fa-youtube-square"></i></a>
+        </div>
+        <div>Copyright © 2021 fabbag.com All rights reserved.</div>
+    </footer>
 </body>
 </html>
