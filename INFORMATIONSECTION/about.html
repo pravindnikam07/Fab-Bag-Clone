@@ -8,6 +8,47 @@
 </head>
 <style>
 
+#top{
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+        #navbar{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            position:sticky;
+            top: 0;
+        }
+        #front{
+            width: 200px;
+            height: 50px;
+            margin-left: 26%;
+        }
+        #navbar>h2{
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgb(209, 165, 82);
+        }
+        #navbar>h2:hover{
+            color: rgb(236, 180, 76);
+        }
+        i{
+            margin: auto;
+            color: rgb(197, 157, 82);
+        }
+        i:hover{
+            color: rgb(253, 191, 76);
+        }
+        div i{
+            margin: 0 30px;
+        }
+
     #container{
         height: 500px;
         width: 85%;
@@ -16,7 +57,7 @@
         box-sizing: border-box;
     }
 
-    h2{
+    #about{
         margin: auto;
         color:black;
         text-align: center;
@@ -31,7 +72,7 @@
         margin-top: 20px;
     }
 
-    p{
+    .para{
         /* text-align: justify; */
     display: block;
     margin-block-start: 1em;
@@ -43,19 +84,34 @@
     margin-right: 20px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
+    line-height: 150%;
     }
 </style>
+<script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
 <body>
+   
+    <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
+    <div id="navbar">
+        <h2>SUBSCRIBE NOW</h2>
+        <a href="index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <i class="fa-solid fa-heart"></i>
+            <a href="signIN.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+
     <div id="container">
-        <h2>About Us</h2>
+        <h2 id="about">About Us</h2>
 <hr>
-<p>
+<p class="para">
     At FAB BAG, we are beauty experts and addicts driven by our passion for high-quality beauty products and delightful service. We recognize that our members are beauty enthusiastic women looking for great products that would work for their specific beauty needs and tastes, but do not have enough time, access or resources to try out and experience all that is available. We work hard in association with brands to select 3 or more amazing products exclusively customized for each member and send them in a delightful bag to her doorstep every month so that she never has to make the expensive mistake of buying products that do not work for her! We also advise members on how to make the best use of these products and keep them abreast of the latest beauty and fashion trends.
 </p>
 
-<br>
 
-<p>
+
+<p class="para">
     We are growing our network of beauty addicts, experts and brands and would love to hear from you Contact Us
 </p>
     </div>

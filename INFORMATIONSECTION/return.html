@@ -8,6 +8,47 @@
 </head>
 <style>
 
+    #top{
+        background-color: black;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        }
+    #navbar{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            position:sticky;
+            top: 0;
+        }
+    #front{
+            width: 200px;
+            height: 50px;
+            margin-left: 26%;
+        }
+    #navbar>h2{
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgb(209, 165, 82);
+        }
+    #navbar>h2:hover{
+            color: rgb(236, 180, 76);
+        }
+     i{
+        margin: auto;
+         color: rgb(197, 157, 82);
+        }
+    i:hover{
+            color: rgb(253, 191, 76);
+        }
+    div i{
+        margin: 0 30px;
+        }
+
     *{
         box-sizing: border-box;
     }
@@ -21,10 +62,10 @@
     h2{
       text-align: center;
        font-weight: bold;
-        padding-top: 40px;
+        padding-top: 14px;
         border-bottom: 2px double #e5b95f;
         padding-bottom: 15px;
-        margin-bottom: 31px;
+        margin-bottom: 12px;
         font-style: italic;
         
     }
@@ -63,7 +104,21 @@
         line-height: 150%;
     }
 </style>
+<script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
 <body>
+
+    <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
+    <div id="navbar">
+        <h2>SUBSCRIBE NOW</h2>
+        <a href="index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <i class="fa-solid fa-heart"></i>
+            <a href="signIN.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+
     <div id="container">
         <h2>RETURNS AND REFUNDS</h2>
         <h4><strong>Authenticity Guarantee</strong></h4>

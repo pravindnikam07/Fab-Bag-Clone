@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborate With FAB BAG</title>
+</head>
+<style>
+
+#top{
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+        #navbar{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            position:sticky;
+            top: 0;
+        }
+        #front{
+            width: 200px;
+            height: 50px;
+            margin-left: 26%;
+        }
+        #navbar>h2{
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgb(209, 165, 82);
+        }
+        #navbar>h2:hover{
+            color: rgb(236, 180, 76);
+        }
+        i{
+            margin: auto;
+            color: rgb(197, 157, 82);
+        }
+        i:hover{
+            color: rgb(253, 191, 76);
+        }
+        div i{
+            margin: 0 30px;
+        }
+
+    #container{
+        height: 900px;
+        width: 70%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+
+    h2{
+        text-align: center;
+       font-weight: bold;
+        padding-top: 11px;
+        border-bottom: 2px double #e5b95f;
+        padding-bottom: 15px;
+        margin-bottom: 12px;
+        font-style: italic;
+        
+    }
+
+    #box1{
+       height: 150px;
+       width: 75%;
+       margin: auto;
+       margin-top: 6px;
+       padding-top: 12px;
+       /* border: 1px solid green; */
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+
+    }
+
+    p{
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    form>input{
+        display: block;
+        margin: auto;
+    }
+
+    input{
+        height: 50px;
+        width: 70%;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin: auto;
+        padding-left: 30px;
+        margin-left: 20px;
+    }
+
+    #email{
+       margin-top: 13px;
+       margin-bottom: 13px;
+    }
+
+    #buttn{
+        margin: auto;
+        height: 50px;
+        width: 20%;
+        
+    }
+
+    .btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-left: 13px;
+        margin-top: 9px;
+        border-radius: 1px;
+  }
+
+  .btn:hover{
+      color: black;
+      background-color: brown;
+  }
+</style>
+<script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
+<body>
+
+    <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
+    <div id="navbar">
+        <h2>SUBSCRIBE NOW</h2>
+        <a href="index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i> 
+            <i class="fa-solid fa-heart"></i>
+            <a href="signIN.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <h2>COLLABORATE WITH FAB BAG</h2>
+
+       <div id="box1">
+           <h3>Blogger Collaboration/Affiliate Marketing Program with FAB BAG</h3>
+            
+           <p> Help us to understand you better!</p>
+       </div>
+       <br>
+
+       <form>
+           <input id="name" type="text" placeholder="Name"/>
+           <input id="email" type="text" placeholder="Email"/>
+           <input id="number" type="number" placeholder="Mobile Number"/>
+           <div id="buttn">
+            <button class="btn" type="button">SEND</button>
+          </div>
+       </form>
+
+    </div>
+</body>
+</html>
