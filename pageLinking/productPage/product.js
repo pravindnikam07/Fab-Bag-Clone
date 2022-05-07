@@ -47,7 +47,7 @@ month.forEach((element) => {
             document.querySelector('#threeM').style.backgroundColor = 'rgb(236, 235, 235)';
         }
         else{
-            monthPrice.textContent = '1,599.00';
+            monthPrice.textContent = '1599.00';
             element.style.backgroundColor = 'rgb(214, 214, 214)';
             document.querySelector('#oneM').style.backgroundColor = 'rgb(236, 235, 235)';
         }
@@ -80,7 +80,7 @@ addToCart.addEventListener('click',function(){
     }
     bookmarkData.push(bookmarkObj);
     localStorage.setItem('bookmark',JSON.stringify(bookmarkData));
-    console.log(bookmarkData);
+    window.location.href = 'http://127.0.0.1:5500/pageLinking/productPage/cartPage.html';
 });
 
 
