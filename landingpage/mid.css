@@ -21,6 +21,10 @@
   border: 3px solid rgb(223, 174, 83);
   border-radius: 20px;
 }
+#mid>div:hover{
+background-color:grey;
+color:grey
+}
 
 .bigh1{
 text-align: center;
@@ -242,6 +246,19 @@ cursor:pointer;
 .lowersecim{ 
     width: 100%;
 }
+/* #lowerhover{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 0;
+width: 0;
+visibility: hidden;
+}
+.lowersecdiv:hover #lowerhover{
+height: 300px;
+width:15%;
+visibility: visible;
+} */
 #last{
     display: flex;
     justify-content: space-evenly;
