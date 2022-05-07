@@ -35,12 +35,12 @@ function displayCartData(){
 }
 
 updateButton.addEventListener('click', function(){
-    let updateQTY = document.querySelector("#inputQTY");
-    console.log(updateQTY);
-    bookmarkData.forEach(element => {
-        // element.productQTY = 2;
-        // console.log(element.productQTY);
-    });
+    // let updateQTY = document.querySelector("#inputQTY");
+    // console.log(updateQTY);
+    // bookmarkData.forEach(element => {
+    //     // element.productQTY = 2;
+    //     // console.log(element.productQTY);
+    // });
     tp = 0;
     displayCartData();
     updateTP.textContent = 'RS. '+ tp +'.00';

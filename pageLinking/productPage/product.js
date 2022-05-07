@@ -80,7 +80,6 @@ addToCart.addEventListener('click',function(){
     }
     bookmarkData.push(bookmarkObj);
     localStorage.setItem('bookmark',JSON.stringify(bookmarkData));
-    window.location.href = 'http://127.0.0.1:5500/pageLinking/productPage/cartPage.html';
 });
 
 
