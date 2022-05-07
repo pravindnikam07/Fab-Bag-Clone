@@ -7,7 +7,7 @@ const count = document.querySelectorAll('.count');
 const description = document.querySelectorAll('#descriptionButton>button');
 
 // to zoom image on curser position
-zoomImg.style.backgroundImage = 'url(https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Makeup-Reveal-1.gif?v=1651562695)';
+zoomImg.style.backgroundImage = 'url(https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Skincare-1.gif?v=1651909062)';
 zoomImg.addEventListener('mousemove',function(e){
     zoomFun(e);
 });
