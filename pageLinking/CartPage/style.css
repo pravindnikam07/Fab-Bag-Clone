@@ -8,6 +8,50 @@
     transition: all .2s linear;
 
 }
+/* navbar */
+#top{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+#navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position:sticky;
+    top: 0;
+}
+#front{
+    width: 200px;
+    height: 50px;
+    margin-left: 26%;
+}
+#navbar>h2{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(197, 157, 82);
+}
+#navbar>h2:hover{
+    color: rgb(236, 180, 76);
+}
+i{
+    margin: auto;
+    color: rgb(197, 157, 82);
+}
+i:hover{
+    color: orange;
+}
+div i{
+    margin: 0 30px;
+}
+
+
+/* payment properties */
 .container{
     display:flex;
     justify-content: center;
