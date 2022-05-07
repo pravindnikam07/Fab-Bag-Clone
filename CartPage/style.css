@@ -76,5 +76,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+#fab{
+    display:flex;
+
+ }
+ #fab>img{
+     width:20%;
+     margin:auto
+ }
 
 
