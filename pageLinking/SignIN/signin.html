@@ -29,8 +29,8 @@
         <h3> Sign in 
         </h3>
         <div class="col">
-            <a href="https://www.facebook.com/"><button id="blueBack">Sign up with facebook<i class="fa-brands fa-facebook-f"></i></button></a>
-            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=lso&flowName=GlifWebSignIn&flowEntry=AccountChooser"><button id="redBack">Sign up with Google<i class="fa-brands fa-google"></i></button></a>
+            <a href="https://www.facebook.com/"><button id="blueBack">Sign in with facebook<i class="fa-brands fa-facebook-f"></i></button></a>
+            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=lso&flowName=GlifWebSignIn&flowEntry=AccountChooser"><button id="redBack">Sign in with Google<i class="fa-brands fa-google"></i></button></a>
             </div>
 
         <h6> Email Address
@@ -42,7 +42,7 @@
         <h6> Password
             <em>*</em>
         </h6>
-        <input id="password" type="text" >
+        <input id="password" type="password" value="password" >
         <table>
             <div class="table">
             <thead class="table">
@@ -53,11 +53,11 @@
         </table>
 
            
-        <p class="sign"><a href="account.html">Sign in</a></p>
+        <input type="submit" id="btn" value="Sign in">
         
      <p>or</p>
       
-        <p class="sign"><a href="signup.html">Creat an Account</a></p>
+        <p class="sign"><a href="signup.html">create an Account</a></p>
     
        
     </form>
@@ -101,23 +101,35 @@
     
     <script>
 
-var form = document.querySelector("form")
+var form = document.querySelector("#form")
 
-var userData = JSON.parse(localStorage.getItem("userData"));
-form.addEventListener("submit",function(event){
-    event.preventDefault();
+var userData = JSON.parse(localStorage.getItem("userData")) || [];
+form.addEventListener("submit",function(){
+   event.preventDefault();
 
+    var data = {
+        email:form.email.value,
+        password:form.password.value,     
+    }
+    console.log(data)
+    userData.push(data)
 
-        
+    if(""==null)
+    {
+        alert("Sorry, looks like something went wrong. Please correct the following and submit again");
+    }
+    else if(""!==data.email && ""!==data.password )
+    {
+alert("Sign in Successfully");
+
 localStorage.setItem("signin",JSON.stringify(userData))
 
    
-window.location.href = "signin.html";
-
-
-localStorage.setItem("submit",JSON.stringify(userData))
-
-
+    window.location.href = "account.html";
+    }
+    
+    
+    
 })
     </script>
 </body>

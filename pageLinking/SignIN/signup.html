@@ -112,9 +112,9 @@
 <script>
    
 
-     var form = document.querySelector("form")
+     var form = document.querySelector("#form")
 
-var userData = JSON.parse(localStorage.getItem("userData"));
+var userData = JSON.parse(localStorage.getItem("userData")) || [];
 form.addEventListener("submit",function(){
    event.preventDefault();
 
@@ -125,11 +125,13 @@ form.addEventListener("submit",function(){
         LastName:form.first.value,
     }
     console.log(data)
+    userData.push(data)
 
     if(userData==null)
     {
-        alert("please create an   account")
-    }else if(userData.email==data.email && userData.password==data.password && userData.FirstName==data.first && userData.LastName==data.last){
+        alert("please create an  account")
+    }else if(""!==data.email && ""!==data.password && ""!==data.first && ""!==data.last)
+    {
 alert("Account Created");
 
 localStorage.setItem("signin",JSON.stringify(userData))
@@ -138,9 +140,10 @@ localStorage.setItem("signin",JSON.stringify(userData))
     window.location.href = "signin.html";
     }
     else {
-        alert("Sign in Successfully")
+        alert("Fill all input box")
+        window.location.href="signup.html"
     }
-    window.location.href="signin.html"
+    
 })
 
 </script>

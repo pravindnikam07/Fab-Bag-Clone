@@ -9,7 +9,16 @@
         margin-top: 20px;
         margin-bottom: 8px;
     }
-
+    #btn {padding: 10px;   
+       margin-top: 5px;
+       margin-bottom: 10px;
+       border: 1px solid grey;
+       background-color: #E5B95F;
+    }
+    #btn:hover{
+        background-color: black;
+        color: white;
+    }
 
     #form {
       width: 400px;
@@ -22,6 +31,7 @@
       margin-left: 500px;
       font-family: 'Open Sans', sans-serif;
       color: #333333;
+      border-color: #ffff;
     
     }
     h6 {
