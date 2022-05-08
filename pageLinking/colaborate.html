@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Collaborate With FAB BAG</title>
 </head>
 <style>
 
@@ -50,44 +50,88 @@
         }
 
     #container{
-        height: 500px;
-        width: 65%;
+        height: 700px;
+        width: 60%;
         /* border: 1px solid red; */
         margin: auto;
-        box-sizing: border-box;
     }
 
-    #about{
-        margin: auto;
-        color:black;
+    h2{
         text-align: center;
-        padding-top: 60px;
+       font-weight: bold;
+        padding-top: 11px;
+        border-bottom: 2px double #e5b95f;
+        padding-bottom: 15px;
+        margin-bottom: 12px;
         font-style: italic;
-        font-size: 30px;
+        
     }
 
-    hr{
-        color: #EFB95f;
-        border: 1px solid salmon;
-        margin-top: 20px;
+    #box1{
+       height: 150px;
+       width: 75%;
+       margin: auto;
+       margin-top: 6px;
+       padding-top: 12px;
+       /* border: 1px solid green; */
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     }
 
-    .para{
-        /* text-align: justify; */
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 150%;
+    h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+
     }
 
-    #shadow{
+    p{
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    form>input{
+        display: block;
+        margin: auto;
+    }
+
+    input{
+        height: 50px;
+        width: 70%;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin: auto;
+        padding-left: 30px;
+        margin-left: 20px;
+    }
+
+    #email{
+       margin-top: 13px;
+       margin-bottom: 13px;
+    }
+
+    #buttn{
+        margin: auto;
+        height: 50px;
+        width: 20%;
+        
+    }
+
+    .btn{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-left: 13px;
+        margin-top: 9px;
+        border-radius: 1px;
+  }
+
+  .btn:hover{
+      color: black;
+      background-color: brown;
+  }
+
+  #shadow{
             height: 10px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         }
@@ -149,29 +193,37 @@
 </style>
 <script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
 <body>
-   
+
     <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
     <div id="navbar">
         <h2>SUBSCRIBE NOW</h2>
-        <a href="/pageLinking/index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+        <a href="/index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
         <div>
             <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-solid fa-heart"></i>
-            <a id="currUser" href="../SignIN/signup.html"><i class="fa-regular fa-user"></i></a>
-            <a href="../productPage/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a id="currUser" href="/signup.html"><i class="fa-regular fa-user"></i></a>
+            <a href="/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
 
     <div id="container">
-        <h2 id="about">About Us</h2>
-<hr>
-<p class="para">
-    At FAB BAG, we are beauty experts and addicts driven by our passion for high-quality beauty products and delightful service. We recognize that our members are beauty enthusiastic women looking for great products that would work for their specific beauty needs and tastes, but do not have enough time, access or resources to try out and experience all that is available. We work hard in association with brands to select 3 or more amazing products exclusively customized for each member and send them in a delightful bag to her doorstep every month so that she never has to make the expensive mistake of buying products that do not work for her! We also advise members on how to make the best use of these products and keep them abreast of the latest beauty and fashion trends.
-</p>
+        <h2>COLLABORATE WITH FAB BAG</h2>
 
-<p class="para">
-    We are growing our network of beauty addicts, experts and brands and would love to hear from you Contact Us
-</p>
+       <div id="box1">
+           <h3>Blogger Collaboration/Affiliate Marketing Program with FAB BAG</h3>
+            
+           <p> Help us to understand you better!</p>
+       </div>
+       <br>
+
+       <form>
+           <input id="name" type="text" placeholder="Name"/>
+           <input id="email" type="text" placeholder="Email"/>
+           <input id="number" type="number" placeholder="Mobile Number"/>
+           <div id="buttn">
+            <button class="btn" type="button">SEND</button>
+          </div>
+       </form>
     </div>
 
     <div id="shadow"></div>
@@ -179,14 +231,14 @@
         <div>
             <div>
                 <h2>INFORMATION</h2>
-                <a href="../InformationSection/about.html"><p>About Us</p></a>
-                <a href="../InformationSection/associatebranda.html"><p>Associated Brands</p></a>
-                <a href="../InformationSection/faq.html"><p>FAQ</p></a>
-                <a href="../InformationSection/colaborate.html"><p>Collaborate with Fab Bag</p></a>
-                <a href="../InformationSection/contactUs.html"><p>Contact Us</p></a>
-                <a href="../InformationSection/return.html"><p>Returns & Refunds</p></a>
-                <a href="../InformationSection/terms.html"><p>Terms & Conditions</p></a>
-                <a href="../InformationSection/Private.html"><p>Privacy Policy</p></a>
+                <a href="/about.html"><p>About Us</p></a>
+                <a href="/associatebranda.html"><p>Associated Brands</p></a>
+                <a href="/faq.html"><p>FAQ</p></a>
+                <a href="/colaborate.html"><p>Collaborate with Fab Bag</p></a>
+                <a href="/contactUs.html"><p>Contact Us</p></a>
+                <a href="/return.html"><p>Returns & Refunds</p></a>
+                <a href="/terms.html"><p>Terms & Conditions</p></a>
+                <a href="/Private.html"><p>Privacy Policy</p></a>
             </div>
             <div>
                 <h2>CUSTOMER CARE</h2>
@@ -211,6 +263,7 @@
         </div>
         <div>Copyright © 2021 fabbag.com All rights reserved.</div>
     </footer>
+
 </body>
 </html>
 <script>
