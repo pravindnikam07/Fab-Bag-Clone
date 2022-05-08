@@ -7,31 +7,37 @@ var tp = 0;
 displayCartData();
 function displayCartData(){
     tbody.innerHTML = null;
-    bookmarkData.forEach(element => {
-        let tr = document.createElement('tr');
-        let td1 = document.createElement('td');
-        let img = document.createElement('img');
-        img.setAttribute('id','cartIMG');
-        img.src = element.productIMG;
-        let td2 = document.createElement('td');
-        td2.innerText = element.productName;
-        let td3 = document.createElement('td');
-        let qty = document.createElement('input');
-        qty.type = 'text';
-        td3.setAttribute('id','inputQTY');
-        qty.value = element.productQTY;
-        let td4 = document.createElement('td');
-        let totalPrice = Number(element.productPrice) * Number(element.productQTY);
-        td4.innerText = 'RS. '+ totalPrice+'.00';
-        tp += totalPrice;
-        updateTP.textContent = 'RS. '+ tp +'.00'
-    
-    
-        td1.append(img);
-        td3.append(qty);
-        tr.append(td1,td2,td3,td4);
-        tbody.append(tr);
-    });
+    if(bookmarkData==null){
+        let thead = document.querySelector('#cartBox>div');
+        thead.innerHTML = 'Your cart is empty!!';
+    }
+    else{
+        bookmarkData.forEach(element => {
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let img = document.createElement('img');
+            img.setAttribute('id','cartIMG');
+            img.src = element.productIMG;
+            let td2 = document.createElement('td');
+            td2.innerText = element.productName;
+            let td3 = document.createElement('td');
+            let qty = document.createElement('input');
+            qty.type = 'text';
+            td3.setAttribute('id','inputQTY');
+            qty.value = element.productQTY;
+            let td4 = document.createElement('td');
+            let totalPrice = Number(element.productPrice) * Number(element.productQTY);
+            td4.innerText = 'RS. '+ totalPrice+'.00';
+            tp += totalPrice;
+            updateTP.textContent = 'RS. '+ tp +'.00'
+        
+        
+            td1.append(img);
+            td3.append(qty);
+            tr.append(td1,td2,td3,td4);
+            tbody.append(tr);
+        });
+    }
 }
 
 updateButton.addEventListener('click', function(){
@@ -61,4 +67,3 @@ function addToCart(){
         console.log(bookmarkData);
     });
 }
-

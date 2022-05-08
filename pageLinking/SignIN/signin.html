@@ -20,7 +20,7 @@
         <div>
             <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-solid fa-heart"></i>
-            <a href="signup.html"><i class="fa-regular fa-user"></i></a>
+            <a id="currUser" href="signup.html"><i class="fa-regular fa-user"></i></a>
             <a href="../productPage/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
@@ -29,8 +29,8 @@
         <h3> Sign in 
         </h3>
         <div class="col">
-            <a href="https://www.facebook.com/"><button id="blueBack">Sign up with facebook<i class="fa-brands fa-facebook-f"></i></button></a>
-            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=lso&flowName=GlifWebSignIn&flowEntry=AccountChooser"><button id="redBack">Sign up with Google<i class="fa-brands fa-google"></i></button></a>
+            <a href="https://www.facebook.com"><button id="blueBack">Sign in with facebook<i class="fa-brands fa-facebook-f"></i></button></a>
+            <a href="https://accounts.google.com/AccountChooser/signinchooser?service=lso&flowName=GlifWebSignIn&flowEntry=AccountChooser"><button id="redBack">Sign in with Google<i class="fa-brands fa-google"></i></button></a>
             </div>
 
         <h6> Email Address
@@ -53,11 +53,11 @@
         </table>
 
            
-        <p class="sign"><a href="account.html">Sign in</a></p>
+        <p id="signIN" class="sign">Sign in</p>
         
      <p>or</p>
       
-        <p class="sign"><a href="signup.html">Creat an Account</a></p>
+        <p class="sign"><a href="signup.html">Create an Account</a></p>
     
        
     </form>
@@ -100,25 +100,40 @@
     </footer>
     
     <script>
+        var userData = JSON.parse(localStorage.getItem("userData"));
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-var form = document.querySelector("form")
-
-var userData = JSON.parse(localStorage.getItem("userData"));
-form.addEventListener("submit",function(event){
-    event.preventDefault();
-
-
-        
-localStorage.setItem("signin",JSON.stringify(userData))
-
-   
-window.location.href = "signin.html";
-
-
-localStorage.setItem("submit",JSON.stringify(userData))
-
-
-})
+        const signIN = document.querySelector('#signIN')
+        signIN.addEventListener('click', signINFun)
+        function signINFun(){
+            var currData = {
+                email : form.email.value,
+                password : form.password.value
+            };   
+            console.log(currData);
+            if(userData==null){
+                alert('Create an account');
+            }
+            else{
+                let flag = false;
+                userData.forEach(element => {
+                    if (element.password==currData.password && element.email==currData.email){
+                        flag = true;
+                        alert('Sign in Successfully completed');
+                        localStorage.setItem("currentUser",JSON.stringify(element.FirstName));
+                        window.location.href = "../landingpage/index.html";
+                        document.getElementById('currUser').innerHTML = element.FirstName;
+                    }
+                });
+                if(flag == false){
+                    alert('Invalid Data');
+                    window.location.reload();
+                }
+            }
+        }
+        if(currentUser!==null){
+            document.getElementById('currUser').innerHTML = currentUser;
+        }
     </script>
 </body>
 </html>

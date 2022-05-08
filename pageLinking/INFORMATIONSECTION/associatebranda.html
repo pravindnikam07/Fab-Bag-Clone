@@ -183,7 +183,7 @@
         <div>
             <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-solid fa-heart"></i>
-            <a href="../SignIN/signup.html"><i class="fa-regular fa-user"></i></a>
+            <a id="currUser" href="../SignIN/signup.html"><i class="fa-regular fa-user"></i></a>
             <a href="../productPage/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
@@ -246,4 +246,9 @@
         card.append(img);
         box.append(card);
     });
+
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if(currentUser!==null){
+                document.getElementById('currUser').innerHTML = currentUser;
+            }
 </script>

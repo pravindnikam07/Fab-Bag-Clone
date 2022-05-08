@@ -25,7 +25,7 @@
         <div>
             <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-solid fa-heart"></i>
-            <a href="signin.html"><i class="fa-regular fa-user"></i></a>
+            <a id="currUser" href="signin.html"><i class="fa-regular fa-user"></i></a>
             <a href="../productPage/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
@@ -106,41 +106,37 @@
     </footer>
 </body>
 </html>
-        
-   </a>  
 
 <script>
-   
+    var form = document.querySelector("form")
 
-     var form = document.querySelector("form")
+    var userData = JSON.parse(localStorage.getItem("userData")) || [];
+    form.addEventListener("submit",function(){
+        event.preventDefault();
+        var data = {
+            email:form.email.value,
+            password:form.password.value,
+            FirstName:form.last.value,
+            LastName:form.first.value,
+        }
+        if(data.email!=='' && data.password!=='' && data.first!=='' && data.last!==''){
+            alert("Account Created");
+            userData.push(data);
+            localStorage.setItem("userData",JSON.stringify(userData));
+            window.location.href = "signin.html";
+        }
+        else if(userData==null)
+        {
+            alert("please create an account");
+        }
+        else {
+            alert("Fill all inputs properly");
+        }
+    });
 
-var userData = JSON.parse(localStorage.getItem("userData"));
-form.addEventListener("submit",function(){
-   event.preventDefault();
-
-    var data = {
-        email:form.email.value,
-        password:form.password.value,
-        FirstName:form.last.value,
-        LastName:form.first.value,
-    }
-    console.log(data)
-
-    if(userData==null)
-    {
-        alert("please create an   account")
-    }else if(userData.email==data.email && userData.password==data.password && userData.FirstName==data.first && userData.LastName==data.last){
-alert("Account Created");
-
-localStorage.setItem("signin",JSON.stringify(userData))
-
-   
-    window.location.href = "signin.html";
-    }
-    else {
-        alert("Sign in Successfully")
-    }
-    window.location.href="signin.html"
-})
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if(currentUser!==null){
+            document.getElementById('currUser').innerHTML = currentUser;
+        }
 
 </script>

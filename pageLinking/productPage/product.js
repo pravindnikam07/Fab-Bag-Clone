@@ -135,3 +135,8 @@ description.forEach(element => {
     });
 });
 
+
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if(currentUser!==null){
+                document.getElementById('currUser').innerHTML = currentUser;
+            }
