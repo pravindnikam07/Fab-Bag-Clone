@@ -118,7 +118,7 @@ p{
     background-color: white;
     border: none;
 }
-.info>button{
+.info>a>button{
     display: block;
     width: 100%;
     padding: 15px;
@@ -126,7 +126,7 @@ p{
     background-color: rgb(56, 55, 55);
     border: none;
 }
-.info>button:hover{
+.info>a>button:hover{
     background-color: rgb(229, 162, 99);
 }
 .linkLogo{
