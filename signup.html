@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Signup Fab Bag</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
     <div id="top">AVAILABLE NOW - THE AWESUMMER MAY FAB BAG!</div>
     <div id="navbar">
         <h2>SUBSCRIBE NOW</h2>
-        <a href="../landingpage/index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
+        <a href="/index.html"><img id="front" src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289" alt=""></a>
         <div>
             <i class="fa-solid fa-magnifying-glass"></i> 
             <i class="fa-solid fa-heart"></i>
-            <a href="signin.html"><i class="fa-regular fa-user"></i></a>
-            <a href="../productPage/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a id="currUser" href="signin.html"><i class="fa-regular fa-user"></i></a>
+            <a href="/cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
     
@@ -72,14 +72,14 @@
         <div>
             <div>
                 <h2>INFORMATION</h2>
-                <a href="../InformationSection/about.html"><p>About Us</p></a>
-                <a href="../InformationSection/associatedBrands.html"><p>Associated Brands</p></a>
-                <a href="../InformationSection/faq.html"><p>FAQ</p></a>
-                <a href="../InformationSection/collaborate.html"><p>Collaborate with Fab Bag</p></a>
-                <a href="../InformationSection/contact.html"><p>Contact Us</p></a>
-                <a href="../InformationSection/returns.html"><p>Returns & Refunds</p></a>
-                <a href="../InformationSection/terms.html"><p>Terms & Conditions</p></a>
-                <a href="../InformationSection/privacy.html"><p>Privacy Policy</p></a>
+                <a href="/about.html"><p>About Us</p></a>
+                <a href="/associatebranda.html"><p>Associated Brands</p></a>
+                <a href="/faq.html"><p>FAQ</p></a>
+                <a href="/colaborate.html"><p>Collaborate with Fab Bag</p></a>
+                <a href="/contactUs.html"><p>Contact Us</p></a>
+                <a href="/return.html"><p>Returns & Refunds</p></a>
+                <a href="/terms.html"><p>Terms & Conditions</p></a>
+                <a href="/Private.html"><p>Privacy Policy</p></a>
             </div>
             <div>
                 <h2>CUSTOMER CARE</h2>
@@ -106,12 +106,11 @@
     </footer>
 </body>
 </html>
-        
-   </a>  
 
 <script>
-   
+    var form = document.querySelector("form")
 
+<<<<<<< HEAD:pageLinking/SignIN/signup.html
      var form = document.querySelector("#form")
 
 var userData = JSON.parse(localStorage.getItem("userData")) || [];
@@ -145,5 +144,35 @@ localStorage.setItem("signin",JSON.stringify(userData))
     }
     
 })
+=======
+    var userData = JSON.parse(localStorage.getItem("userData")) || [];
+    form.addEventListener("submit",function(){
+        event.preventDefault();
+        var data = {
+            email:form.email.value,
+            password:form.password.value,
+            FirstName:form.last.value,
+            LastName:form.first.value,
+        }
+        if(data.email!=='' && data.password!=='' && data.first!=='' && data.last!==''){
+            alert("Account Created");
+            userData.push(data);
+            localStorage.setItem("userData",JSON.stringify(userData));
+            window.location.href = "signin.html";
+        }
+        else if(userData==null)
+        {
+            alert("please create an account");
+        }
+        else {
+            alert("Fill all inputs properly");
+        }
+    });
+
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if(currentUser!==null){
+            document.getElementById('currUser').innerHTML = currentUser;
+        }
+>>>>>>> d43c118c56e1cc92c9a06dc3c17e74ba0e8380d2:pageLinking/signup.html
 
 </script>
