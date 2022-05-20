@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+/* navbar */
+#top{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+#navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position:sticky;
+    top: 0;
+}
+#front{
+    width: 200px;
+    height: 50px;
+    margin-left: 26%;
+}
+#navbar>h2{
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(197, 157, 82);
+}
+#navbar>h2:hover{
+    color: rgb(236, 180, 76);
+}
+i{
+    margin: auto;
+    color: rgb(197, 157, 82);
+}
+i:hover{
+    color: orange;
+}
+div i{
+    margin: 0 30px;
+}
+
+/* product description */
+#productInfo{
+    width: 75%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 46% 54%
+}
+#productInfo>div{
+    width: 95%;
+}
+.image{
+    width: 90%;
+    height: 290px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+}
+#enlarge{
+    font-size: 20px;
+    border: 1px solid rgb(251, 203, 114);
+    padding: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: rgb(250, 201, 110);
+    background-color: white;
+}
+img{
+    width: 30%;
+    margin-top: 1px;
+}
+p{
+    margin-bottom: 20px;
+}
+.info>p:first-child>a{
+    text-decoration: none;
+    color: black;
+}
+.info>p:first-child>a:hover{
+    color: rgb(251, 187, 66);
+}
+.info>h1{
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+.info>h4{
+    margin-bottom: 12px;
+}
+#months>button{
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px 40px 10px;
+}
+.incDec{
+    display: inline-block;
+    color: white;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#productQTY{
+    font-size: 20px;
+}
+.incDec>*{
+    font-size: 30px;
+    width: 40px;
+    background-color: white;
+    border: none;
+}
+.info>a>button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background-color: rgb(56, 55, 55);
+    border: none;
+}
+.info>a>button:hover{
+    background-color: rgb(229, 162, 99);
+}
+.linkLogo{
+    margin-top: 20px;
+    display: flex;
+}
+.linkLogo>*{
+    margin: 5px 20px;
+    font-size: 22px;
+}
+.linkLogo>div>a{
+    color: gray;
+}
+.linkLogo>div>a:hover{
+    color: rgb(246, 173, 105);
+}
+/* description box styles */
+#description{
+    width: 45%;
+    margin: auto;
+    margin-top: 80px;
+    /* padding: 15px; */
+}
+#description>div:first-child{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+#description>div>button{
+    padding: 10px 15px;
+    margin-right: 10px;
+    display: block;
+    border: none;
+    border-radius: 50px;
+}
+#description>div>button:hover{
+    background-color: rgb(246, 173, 105);
+}
+div>ul{
+    list-style-type: none;
+}
+li>ul{
+    list-style-type: disc;
+    padding-left: 40px;
+}
+li{
+    margin: 20px 0;
+}
+li>ul>li{
+    margin: 10px 0;
+}
+#descripCont>div{
+    width: 45%;
+    margin: auto;
+    margin-top: 80px;
+    /* padding: 15px; */
+}
+#refundPolicy>ul{
+    list-style-type: disc;
+}
+#custmerReview>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+#custmerReview>div>button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(191, 152, 78);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#description>div:nth-child(3),
+#description>div:nth-child(4),
+#description>div:nth-child(5){
+    visibility: hidden;
+    height: 0px;
+}
+
+/* footer */
+#shadow{
+    height: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+footer>div{
+    width: 70%;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+}
+footer>div>div *{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: gray;
+}
+footer div>h2{
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    font-weight: lighter;
+}
+footer div>div>input{
+    height: 40px;
+    width: 200px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+footer div>div>button{
+    height: 40px;
+    width: auto;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 0 15px;
+    background-color: rgb(196, 159, 91);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+footer div>div>button:hover{
+    background-color: black;
+}
+footer a>p:hover{
+    color: rgb(244, 182, 66);
+}
+footer>#footLogo{
+    width: 200px;
+    margin-top: -100px;
+}
+footer>#footLogo>a{
+    padding: 18px 0px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius:50%;
+    background-color: rgb(245, 248, 248);
+}
+footer>#footLogo>a:nth-child(1):hover{
+    background-color: navy;
+    color: white;
+}
+footer>#footLogo>a:nth-child(2):hover{
+    background-color: skyblue;
+}
+footer>#footLogo>a:nth-child(3):hover{
+    background-color: rgba(217, 111, 79, 0.892);
+}
+footer>#footLogo>a:nth-child(4):hover{
+    background-color: rgb(250, 81, 81);
+}
+footer>div:last-child{
+    font-size: 20px;
+    margin-top: -30px;
+    margin-left: 40%;
+
+}
+
+/* media query */
+@media all  and (min-width:200px) and (max-width:850px){
+    #productInfo{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
